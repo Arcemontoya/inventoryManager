@@ -1,0 +1,9 @@
+.venv
+.env
+
+inventoryManager/node_modules
+inventoryManager/_pycache_/*
+inventoryManager/migrations/_pycache_/*
+
+node_modules/*
+inventoryManager/node_modules/*
