@@ -14,6 +14,8 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
+load_dotenv()
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -86,7 +88,7 @@ DB_PORT = os.getenv('DB_PORT')
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': DB_NAME,
         'USER': DB_USER,
         'PASSWORD': DB_USER_PASSWORD,
         'HOST': DB_IP,
